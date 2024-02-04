@@ -17,7 +17,7 @@
   />
 
   <!-- "A" glyph -->
-  <path fill="#45818E" transform="scale(1, -1) translate(450, -650)" d="M 299 580
+  <path fill="#45818E" transform="scale(1, -1) translate(500, -650)" d="M 299 580
     c 29.9961 0.491211 55.3135 -10.46 63 -32
     l 172 -482
     h 30
@@ -48,7 +48,7 @@
   />
 
   <!-- "r" glyph -->
-  <path fill="#45818E" transform="scale(1, -1) translate(1000, -650)" d="M 72 33
+  <path fill="#45818E" transform="scale(1, -1) translate(1050, -650)" d="M 72 33
     c 0 24.4502 7.28027 32.999 31.001 32.999
     h 76
     v 319
@@ -76,7 +76,7 @@
   />
 
   <!-- "l" glyph -->
-  <path fill="#45818E" transform="scale(1, -1) translate(1450, -650)" d="M 86 33
+  <path fill="#45818E" transform="scale(1, -1) translate(1500, -650)" d="M 86 33
     c 0 23.9473 8.15137 33 31 33
     h 153
     v 508
@@ -95,7 +95,7 @@
   />
 
   <!-- "o" glyph -->
-  <path fill="#45818E" transform="scale(1, -1) translate(1950, -650)" d="M 59 226
+  <path fill="#45818E" transform="scale(1, -1) translate(2000, -650)" d="M 59 226
     c 0 113.019 62.8936 185.844 145 218.5
     c 29.333 11.667 61.333 17.5 96 17.5
     c 113.625 0 188.064 -60.5283 222.501 -141.5
