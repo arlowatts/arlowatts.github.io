@@ -3,7 +3,7 @@
   <!-- Characters from the font "Mechanical" by Robert Jablonski -->
 
   <!-- "<" character -->
-  <path transform="scale(1, -1) translate(-50, -650)" d="M 494 127
+  <path fill="#45818E" transform="scale(1, -1) translate(-50, -650)" d="M 494 127
     c 20.6338 -9.02734 26.415 -22.5469 13.999 -46
     c -9.5498 -19.1006 -21.1143 -26.4502 -44.999 -16
     l -379 186
@@ -17,7 +17,7 @@
   />
 
   <!-- "A" glyph -->
-  <path transform="scale(1, -1) translate(450, -650)" d="M 299 580
+  <path fill="#45818E" transform="scale(1, -1) translate(450, -650)" d="M 299 580
     c 29.9961 0.491211 55.3135 -10.46 63 -32
     l 172 -482
     h 30
@@ -48,7 +48,7 @@
   />
 
   <!-- "r" glyph -->
-  <path transform="scale(1, -1) translate(1000, -650)" d="M 72 33
+  <path fill="#45818E" transform="scale(1, -1) translate(1000, -650)" d="M 72 33
     c 0 24.4502 7.28027 32.999 31.001 32.999
     h 76
     v 319
@@ -76,7 +76,7 @@
   />
 
   <!-- "l" glyph -->
-  <path transform="scale(1, -1) translate(1450, -650)" d="M 86 33
+  <path fill="#45818E" transform="scale(1, -1) translate(1450, -650)" d="M 86 33
     c 0 23.9473 8.15137 33 31 33
     h 153
     v 508
@@ -95,7 +95,7 @@
   />
 
   <!-- "o" glyph -->
-  <path transform="scale(1, -1) translate(1950, -650)" d="M 59 226
+  <path fill="#45818E" transform="scale(1, -1) translate(1950, -650)" d="M 59 226
     c 0 113.019 62.8936 185.844 145 218.5
     c 29.333 11.667 61.333 17.5 96 17.5
     c 113.625 0 188.064 -60.5283 222.501 -141.5
@@ -118,7 +118,7 @@
   />
 
   <!-- "W" glyph -->
-  <path transform="scale(1, -1) translate(2950, -650)" d="M 604 546
+  <path fill="#45818E" transform="scale(1, -1) translate(2950, -650)" d="M 604 546
     c0 -23.9238 -7.16211 -33 -30 -33
     h -27
     l -67 -492
@@ -151,7 +151,7 @@
   />
 
   <!-- "a" glyph -->
-  <path transform="scale(1, -1) translate(3450, -650)" d="M 312 462
+  <path fill="#45818E" transform="scale(1, -1) translate(3450, -650)" d="M 312 462
     c 112.878 0 172.998 -52.0303 172.998 -163.002
     v -194
     c 0 -26 11 -39 33 -39
@@ -182,7 +182,7 @@
   />
 
   <!-- "t" glyphs -->
-  <path transform="scale(1, -1) translate(3950, -650)" d="M 57 379
+  <path fill="#45818E" transform="scale(1, -1) translate(3950, -650)" d="M 57 379
     c 0 24.4502 7.28027 33.001 31.001 33.001
     h 99
     v 147
@@ -206,7 +206,7 @@
     c -23.7188 0 -31 8.55176 -31 33
     z"
   />
-  <path transform="scale(1, -1) translate(4450, -650)" d="M 57 379
+  <path fill="#45818E" transform="scale(1, -1) translate(4450, -650)" d="M 57 379
     c 0 24.4502 7.28027 33.001 31.001 33.001
     h 99
     v 147
@@ -232,7 +232,7 @@
   />
 
   <!-- "s" glyph -->
-  <path transform="scale(1, -1) translate(4950, -650)" d="M 323 -11
+  <path fill="#45818E" transform="scale(1, -1) translate(4950, -650)" d="M 323 -11
     c -73.1934 0 -124.656 21.6562 -161.999 58.999
     v -27
     c 0 -24.5938 -10.9492 -32 -37 -32
@@ -265,7 +265,7 @@
   />
 
   <!-- "/" character -->
-  <path transform="scale(1, -1) translate(5400, -650)" d="M 431 637
+  <path fill="#45818E" transform="scale(1, -1) translate(5400, -650)" d="M 431 637
     c 3.8457 10.2559 18.2344 14.999 31.999 14.999
     c 18.7754 0 47.3057 -9.28809 38.001 -31
     l -333 -751
@@ -276,7 +276,7 @@
   />
 
   <!-- ">" character -->
-  <path transform="scale(1, -1) translate(5850, -650)" d="M 434 285
+  <path fill="#45818E" transform="scale(1, -1) translate(5850, -650)" d="M 434 285
     l -328.999 157.001
     c -20.5752 9.00195 -25.1182 22.373 -14 46
     c 9.27539 18.5508 22.3232 28.0938 45 16
