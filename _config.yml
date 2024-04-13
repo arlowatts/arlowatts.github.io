@@ -1,7 +1,7 @@
 theme: minima
 
-# permalink: /:path/:basename/
+permalink: /:path/:basename/
 
 header_pages:
   - projects.md
-  - blog.html
+  - blog.md
