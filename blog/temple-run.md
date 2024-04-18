@@ -54,7 +54,7 @@ As an endless runner game in which the main goal is simply to run as far as poss
 
 ## References
 
-Andersen, E., Liu, Y.-E., Snider, R., Szeto, R., Cooper, S., & Popović, Z. (2011). On the harmfulness of secondary game objectives. *Proceedings of the 6th International Conference on Foundations of Digital Games*, 30–37. https://doi.org/10.1145/2159365.2159370
+Andersen, E., Liu, Y.-E., Snider, R., Szeto, R., Cooper, S., & Popović, Z. (2011). On the harmfulness of secondary game objectives. *Proceedings of the 6th International Conference on Foundations of Digital Games*, 30-37. https://doi.org/10.1145/2159365.2159370
 
 Ausburn, L. J., Martens, J., Baukal, Jr, Charles E., Agnew, I., Dionne, R., & Ausburn, F. B. (2019). User Characteristics, Trait vs. State Immersion, and Presence in a First-Person Virtual World. *Journal of Virtual Worlds Research, 12*(3). https://doi.org/10.4101/jvwr.v12i3.7366
 
@@ -62,9 +62,9 @@ Chamarro, A., Oberst, U., Cladellas, R., & Fuster, H. (2020). Effect of the Frus
 
 Larche, C. J., & Dixon, M. J. (2021). Winning isn't everything: The impact of optimally challenging smartphone games on flow, game preference and individuals gaming to escape aversive bored states. *Computers in Human Behavior, 123*, 106857. https://doi.org/10.1016/j.chb.2021.106857
 
-Larche, C. J., Musielak, N., & Dixon, M. J. (2017). The Candy Crush Sweet Tooth: How 'Near-misses' in Candy Crush Increase Frustration, and the Urge to Continue Gameplay. *Journal of Gambling Studies, 33*(2), 599–615. https://doi.org/10.1007/s10899-016-9633-7
+Larche, C. J., Musielak, N., & Dixon, M. J. (2017). The Candy Crush Sweet Tooth: How 'Near-misses' in Candy Crush Increase Frustration, and the Urge to Continue Gameplay. *Journal of Gambling Studies, 33*(2), 599-615. https://doi.org/10.1007/s10899-016-9633-7
 
-Lin, Y.-L., & Lin, H.-W. (2011). A study on the goal value for massively multiplayer online role-playing games players. *Computers in Human Behavior, 27*(6), 2153–2160. https://doi.org/10.1016/j.chb.2011.06.009
+Lin, Y.-L., & Lin, H.-W. (2011). A study on the goal value for massively multiplayer online role-playing games players. *Computers in Human Behavior, 27*(6), 2153-2160. https://doi.org/10.1016/j.chb.2011.06.009
 
 Lobo, P. (2019). Novel Subjects: Robinson Crusoe & Minecraft and the Production of Sovereign Selfhood. *Game Studies, 19*(1). https://gamestudies.org/1901/articles/lobo
 
@@ -78,8 +78,8 @@ Temple Run (iOS version) [Video Game]. (2011). Imangi Studios.
 
 Temple Run - Imangi. (n.d.). Imangi Studios. Retrieved April 16, 2024, from https://imangistudios.com/thegames/temple-run/
 
-Velez, J. A., Ewoldsen, D. R., Hanus, M. D., Song, H., & Villarreal, J. A. (2018). Social Comparisons and Need Fulfillment: Interpreting Video Game Enjoyment in the Context of Leaderboards. *Communication Research Reports, 35*(5), 424–433. https://doi.org/10.1080/08824096.2018.1525352
+Velez, J. A., Ewoldsen, D. R., Hanus, M. D., Song, H., & Villarreal, J. A. (2018). Social Comparisons and Need Fulfillment: Interpreting Video Game Enjoyment in the Context of Leaderboards. *Communication Research Reports, 35*(5), 424-433. https://doi.org/10.1080/08824096.2018.1525352
 
-Wadhwa, M., & Kim, J. C. (2015). Can a Near Win Kindle Motivation? The Impact of Nearly Winning on Motivation for Unrelated Rewards. *Psychological Science, 26*(6), 701–708. https://doi.org/10.1177/0956797614568681
+Wadhwa, M., & Kim, J. C. (2015). Can a Near Win Kindle Motivation? The Impact of Nearly Winning on Motivation for Unrelated Rewards. *Psychological Science, 26*(6), 701-708. https://doi.org/10.1177/0956797614568681
 
 Waszkiewicz, A., & Kominiarczuk M. (2021). Towards a Model of Objective-Based Reward Systems. *Game Studies, 21*(1). https://gamestudies.org/2101/articles/waszkiewicz_kominiarczuk
