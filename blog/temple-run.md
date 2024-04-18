@@ -6,7 +6,7 @@ title: "Temple Run: Why We Play Games We Can't Win"
 
 When we play a game, we often work towards winning the game. This is true in multiplayer games, where players may try to outperform each other, and in singleplayer games, where many games have a finite length and a clear objective. However, some of the most popular video games of all time do not follow this pattern. One such example is *Temple Run* (2011) by Imangi Studios. In *Temple Run*, the player controls an explorer who has stolen a cursed idol from a temple. During the game, the player must avoid obstacles as they run from pursuing Demon Monkeys through the temple's endless paths (Temple Run - Imangi, n.d.). Notably, *Temple Run* has no finish line; the game ends only when the player's avatar dies (Temple Run, 2011). Despite the lack of an end goal, games like *Temple Run* have achieved massive commercial success and global popularity. Other examples of popular games with no winning condition include *Minecraft* (2011) and *Tetris* (1985). This suggests that **winning games is less important than playing games to many gamers**. The first factor that contributes to this tendency is the inclusion of secondary objectives in endless games. These give players goals to work toward that may be entirely unrelated to winning the game. The second factor is player-driven objectives and skill progression. These are motivations which are defined by the players themselves and which are not associated with an in-game reward. The third factor is enjoyment of gameplay and escapism. Many people play games not to meet goals, but simply to experience the game.
 
-> ![The start of a new game in Temple Run.](../assets/images/temple-run-new-game.png){ height=512px }
+> ![The start of a new game in Temple Run.](../assets/images/temple-run-new-game.png){:height="512px"}
 
 > The start of a new game in Temple Run.
 
@@ -20,11 +20,11 @@ The second type of secondary objective in *Temple Run* is what are simply known 
 
 The final type of secondary objective in *Temple Run* is the in-game shop. Coins collected by the player can later be spent to purchase permanent upgrades, single-use items, and cosmetic items. The non-cosmetic items available in the shop increase the score a player can achieve in the game, either by helping the player to run farther or enabling the player to collect more coins. For example, when the player purchases the *Coin Magnet* upgrade and collects it during a game, it will allow them to collect nearby coins without needing to run into them. In this way, shop items are aligned with the game's primary goal in two ways: they require the player to collect coins to purchase them, reinforcing the motivation to do so; and they help the player to achieve a higher score, reinforcing the importance of that goal.
 
-> ![Part of the list of objectives in Temple Run.](../assets/images/temple-run-objectives.png){ height=512px }
+> ![Part of the list of objectives in Temple Run.](../assets/images/temple-run-objectives.png){:height="512px"}
 
 > Part of the list of objectives in Temple Run.
 
-> ![Some of the powerups a player can purchase in the game.](../assets/images/temple-run-powerups.png){ height=512px }
+> ![Some of the powerups a player can purchase in the game.](../assets/images/temple-run-powerups.png){:height="512px"}
 
 > Some of the powerups a player can purchase in the game.
 
@@ -36,7 +36,7 @@ Accomplishment in video games is often represented as a *score*, a single number
 
 By trying to achieve a high score in an endless game, players may also be comparing their performance to others and attempting to elevate their rank (Velez et al., 2018). This type of social behaviour is a player-driven objective to improve one's skill at the game relative to other players, including both friends and strangers. *Temple Run* takes advantage of this form of motivation by integrating the game's scoring system with the iOS Game Center system, allowing players to compare their scores with those of players around the world. By giving a way for players to compare their scores to others, a leaderboard encourages players to spend more time improving their skill in the game. To augment the leaderboard system, the integration with Game Center also allows players to "friend" other players. In *Temple Run*, the high scores of a player's friends are shown in the game world as arches over the game's path, providing a clear visual indicator when a player passes a friend's highest score. This increases the investment a player has in their high score, since they can directly compare it to their friends and can create player-driven goals based on that social interaction.
 
-> ![Displaying in-game statistics encourages players to focus on them.](../assets/images/temple-run-stats.png){ height=512px }
+> ![Displaying in-game statistics encourages players to focus on them.](../assets/images/temple-run-stats.png){:height="512px"}
 
 > Displaying in-game statistics encourages players to focus on them.
 
