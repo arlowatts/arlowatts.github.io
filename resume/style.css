@@ -1,0 +1,14 @@
+body {
+    font-family: Nunito;
+    margin: 0;
+
+    @media only screen {
+        width: 7.5in;
+        margin: 0.5in;
+    }
+}
+
+div.flexrow {
+    display: flex;
+    justify-content: space-between;
+}
