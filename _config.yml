@@ -3,5 +3,4 @@ theme: minima
 permalink: /:path/:basename/
 
 header_pages:
-  - resume/index.html
   - projects.md
