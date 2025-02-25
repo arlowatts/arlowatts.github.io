@@ -2,7 +2,9 @@
     border: 0.2em solid black;
     border-radius: 1em;
 
+    display: block;
     padding: 0.5em 1em 0em 1em;
+    margin: 1em;
 
     text-decoration: initial;
     color: initial;
