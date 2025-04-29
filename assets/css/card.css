@@ -1,5 +1,6 @@
 .card {
-    border: 0.2em solid black;
+    border-width: 0.25em;
+    border-style: solid;
     border-radius: 1em;
 
     display: block;
