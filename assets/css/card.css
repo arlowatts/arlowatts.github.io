@@ -13,6 +13,9 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
+        text-decoration: initial;
+        color: initial;
+
         transform: scale(1.025);
     }
 }
