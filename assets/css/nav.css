@@ -1,3 +1,7 @@
+.site-header {
+    height: 60px;
+}
+
 .site-logo {
     width: 400px;
     max-width: 100%;
