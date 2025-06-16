@@ -1,0 +1,9 @@
+.site-logo {
+    width: 400px;
+    max-width: 80%;
+    height: 60px;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

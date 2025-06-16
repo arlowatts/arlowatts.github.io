@@ -1,9 +1,11 @@
 <header class="site-header">
+
     <div class="wrapper">
-        <div style="width: 400px; max-width: 80%; height: 56px; display: inline-flex; flex-direction: column; justify-content: space-around;">
-            <a href="/">
-                <img width="100%" src="/assets/images/logo-full.svg" />
-            </a>
-        </div>
+
+        <a class="site-logo" href="{{ '/' | relative_url }}">
+            <img alt="{{ site.title }} home" width="400" height="50" src="{{ '/assets/images/logo-full.svg' | relative_url }}">
+        </a>
+
     </div>
+
 </header>

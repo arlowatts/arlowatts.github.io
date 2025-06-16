@@ -1,3 +1,8 @@
-theme: minima
+title: Arlo Watts
+
+author:
+  name: Arlo Watts
+
+remote_theme: jekyll/minima@v2.5.2
 
 permalink: /:path/:basename/
