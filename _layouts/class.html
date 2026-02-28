@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<h2>Abilities</h2>
+
+{%- for ability in page.abilities -%}
+
+    <h3>{{ ability.title | escape }}</h3>
+
+    {{ ability.content | markdownify }}
+
+{%- endfor -%}
