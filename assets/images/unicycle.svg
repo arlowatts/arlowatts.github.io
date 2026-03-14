@@ -1,4 +1,4 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
     <defs>
         <circle id="tire" stroke-width="1" r="7" />
 
@@ -16,7 +16,7 @@
         <line id="pedal" stroke-width="0.75" x1="-1" x2="1" transform="rotate(-131)" />
 
         <g id="wheel" transform="rotate(126)">
-            <use href="#pedal" transform="translate(0,+4.8)" />
+            <use href="#pedal" transform="translate(0, +4.8)" />
             <use href="#crank" transform="rotate(  0)" />
 
             <use href="#hub" />
@@ -30,7 +30,7 @@
             <use href="#tire" />
 
             <use href="#crank" transform="rotate(180)" />
-            <use href="#pedal" transform="translate(0,-4.8)" />
+            <use href="#pedal" transform="translate(0, -4.8)" />
         </g>
 
         <g id="post">
@@ -38,7 +38,7 @@
             <circle fill="black" stroke="none" r="0.375" />
         </g>
 
-        <path id="saddle" fill="black" stroke="none" transform="translate(0,-14.5)"
+        <path id="saddle" fill="black" stroke="none" transform="translate(0, -14.5)"
             d="M 0 0
             C -4 0 -5 -0.5 -4 -2
             S -3 -3 -1 -2
@@ -48,9 +48,54 @@
         />
     </defs>
 
-    <g fill="none" stroke="black" transform="translate(13,18)">
+    <g fill="none" stroke="black" transform="translate(13, 18)">
         <use href="#wheel" />
         <use href="#post" />
         <use href="#saddle" />
     </g>
+
+    <script>
+        const friction = 1e-4;
+        const acceleration = 0.2;
+        const topSpeed = 1;
+
+        let angle = 0;
+        let speed = 0;
+
+        let lastFrameTime;
+        let elapsedTime;
+
+        const wheel = document.getElementById("wheel");
+        const pedal = document.getElementById("pedal");
+
+        const wheelInitialAngle = wheel.transform.baseVal.length > 0 ? wheel.transform.baseVal[0].angle : 0;
+        const pedalInitialAngle = pedal.transform.baseVal.length > 0 ? pedal.transform.baseVal[0].angle : 0;
+
+        function main(newFrameTime) {
+            if (lastFrameTime === undefined) {
+                lastFrameTime = newFrameTime;
+            }
+
+            else {
+                elapsedTime = newFrameTime - lastFrameTime;
+                lastFrameTime = newFrameTime;
+
+                angle = (angle + speed * elapsedTime) % 360;
+                speed = Math.max(speed - friction * elapsedTime, 0);
+
+                wheel.setAttribute("transform", `rotate(${wheelInitialAngle + angle})`);
+                pedal.setAttribute("transform", `rotate(${pedalInitialAngle - angle})`);
+            }
+
+            requestAnimationFrame(main);
+        }
+
+        function accelerate() {
+            speed = Math.min(speed + acceleration, topSpeed);
+        }
+
+        addEventListener("pointerdown", accelerate);
+
+        requestAnimationFrame(main);
+    </script>
 </svg>
