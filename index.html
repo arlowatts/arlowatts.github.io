@@ -2,35 +2,12 @@
 <html>
     <head>
         <title>Arlo Watts</title>
-
+        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" type="image/svg" href="assets/images/unicycle.svg">
         <link rel="apple-touch-icon" sizes="180x180" href="assets/images/unicycle-icon.png">
-
-        <style>
-            html, body {
-                margin: 0;
-                height: 100%;
-            }
-
-            body {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                touch-action: none;
-                -webkit-user-select: none;
-                user-select: none;
-            }
-
-            iframe {
-                width: min(50vw, 50vh);
-                height: min(50vw, 50vh);
-                border: none;
-            }
-        </style>
+        <script src="assets/js/unicycle.js"></script>
     </head>
-
     <body>
-        <iframe src="assets/images/unicycle.svg" />
+        <iframe id="frame" src="assets/images/unicycle.svg" />
     </body>
 </html>
