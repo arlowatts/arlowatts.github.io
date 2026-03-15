@@ -54,6 +54,14 @@
         <use href="#saddle" />
     </g>
 
+    <style>
+        svg {
+            touch-action: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+    </style>
+
     <script>
         const friction = 1e-4;
         const acceleration = 0.2;
@@ -94,6 +102,7 @@
             speed = Math.min(speed + acceleration, topSpeed);
         }
 
+        document.addEventListener("touchstart", {});
         addEventListener("pointerdown", accelerate);
 
         requestAnimationFrame(main);
