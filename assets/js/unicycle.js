@@ -1,8 +1,9 @@
 addEventListener("load", main);
 
 // initialize motion constants
-const impulse = 0.02;
-const deceleration = -0.0005;
+const impulse = 0.25;
+const deceleration = -0.00015;
+const maximumVelocity = 1;
 
 // declare the initial state
 let stopTime = 0;
@@ -46,19 +47,13 @@ function main() {
 // return the position of the wheel at a given time
 function position(time) {
     let elapsedTime = Math.min(time - initialTime, stopTime);
-
-    return initialPosition + elapsedTime * (
-        initialVelocity +
-        impulse * (2 / 3) * Math.sqrt(elapsedTime) +
-        deceleration * (1 / 2) * elapsedTime
-    );
+    return initialPosition + (initialVelocity + deceleration * 0.5 * elapsedTime) * elapsedTime;
 }
 
 // return the velocity of the wheel at a given time
 function velocity(time) {
     let elapsedTime = Math.min(time - initialTime, stopTime);
-
-    return initialVelocity + impulse * Math.sqrt(elapsedTime) + deceleration * elapsedTime;
+    return initialVelocity + deceleration * elapsedTime;
 }
 
 // accelerate the wheel
@@ -66,10 +61,7 @@ function accelerate() {
     let time = Date.now();
 
     initialPosition = position(time);
-    initialVelocity = velocity(time);
+    initialVelocity = Math.min(maximumVelocity, velocity(time) + impulse);
     initialTime = time;
-
-    stopTime = Math.pow(
-        (-impulse - Math.sqrt(impulse * impulse - 4 * deceleration * initialVelocity)) / (2 * deceleration), 2
-    );
+    stopTime = -initialVelocity / deceleration;
 }
