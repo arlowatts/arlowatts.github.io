@@ -1,36 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
     <defs>
         <circle id="tire" stroke-width="1" r="7" />
-
         <circle id="hub" stroke-width="0.25" r="1" />
 
-        <g id="spoke" stroke-width="0.25">
-            <line x1="-6" y1="-3.0" x2="-0.6" y2="+0.8" />
-            <line x1="-7" y1="-1.2" x2="-0.6" y2="+0.8" />
-            <line x1="-7" y1="+1.2" x2="-0.6" y2="-0.8" />
-            <line x1="-6" y1="+3.0" x2="-0.6" y2="-0.8" />
-        </g>
-
-        <line id="crank" stroke-width="0.5" y2="4.8" />
-
+        <line id="crank" stroke-width="0.5" y2="4.7" />
         <line id="pedal" stroke-width="0.75" x1="-1" x2="1" transform="rotate(-131)" />
 
+        <g id="spokepair" stroke-width="0.25">
+            <line x1="-5.836" y1="-2.974" x2="-0.6" y2="0.8" />
+            <line x1="-6.469" y1="-1.025" x2="-0.6" y2="0.8" />
+        </g>
+
+        <g id="spokequad">
+            <use href="#spokepair" />
+            <use href="#spokepair" transform="scale(1, -1)" />
+        </g>
+
         <g id="wheel" transform="rotate(126)">
-            <use href="#pedal" transform="translate(0, +4.8)" />
-            <use href="#crank" transform="rotate(  0)" />
+            <use href="#pedal" transform="translate(0, 4.7)" />
+            <use href="#crank" />
+
+            <use href="#spokequad" />
+            <use href="#spokequad" transform="rotate(72)" />
+            <use href="#spokequad" transform="rotate(144)" />
+            <use href="#spokequad" transform="rotate(216)" />
+            <use href="#spokequad" transform="rotate(288)" />
 
             <use href="#hub" />
-
-            <use href="#spoke" transform="rotate(  0)" />
-            <use href="#spoke" transform="rotate( 72)" />
-            <use href="#spoke" transform="rotate(144)" />
-            <use href="#spoke" transform="rotate(216)" />
-            <use href="#spoke" transform="rotate(288)" />
-
             <use href="#tire" />
 
             <use href="#crank" transform="rotate(180)" />
-            <use href="#pedal" transform="translate(0, -4.8)" />
+            <use href="#pedal" transform="translate(0, -4.7)" />
         </g>
 
         <g id="post">
