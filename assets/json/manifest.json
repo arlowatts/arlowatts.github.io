@@ -1,5 +1,8 @@
 {
     "name": "Arlo Watts",
+    "short_name": "Arlo",
+    "theme_color": "white",
+    "background_color": "white",
     "icons": [
         {
             "src": "/assets/images/unicycle-icon-192x192.png",
