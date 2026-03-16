@@ -10,7 +10,7 @@ body {
     justify-content: center;
 }
 
-#frame {
+iframe {
     border: none;
     width: min(50vw, 50vh);
     height: min(50vw, 50vh);
