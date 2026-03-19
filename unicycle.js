@@ -1,9 +1,9 @@
 addEventListener("load", main);
 
 // initialize motion constants
-const impulse = 0.2;
+const impulse = 0.3;
 const deceleration = -0.0002;
-const maximumVelocity = 1.2;
+const maximumVelocity = 1.25;
 
 // declare the initial state
 let initialPosition = 0;
@@ -76,7 +76,9 @@ function accelerate() {
 
     // store the current state as the new initial state and update the velocity
     initialPosition = position(elapsedTime);
-    initialVelocity = Math.min(maximumVelocity, velocity(elapsedTime) + impulse);
+    initialVelocity = velocity(elapsedTime);
+    initialVelocity += impulse * (1 - initialVelocity / maximumVelocity);
+
     initialTime = currentTime;
     motionDuration = -initialVelocity / deceleration;
 }
