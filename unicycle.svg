@@ -1,56 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 26">
     <defs>
-        <circle id="tire" stroke-width="1" r="7" />
-        <circle id="hub" stroke-width="0.25" r="1" />
+        <circle id="tire" stroke-width="1" r="7"></circle>
+        <circle id="hub" stroke-width="0.25" r="1"></circle>
 
-        <line id="crank" stroke-width="0.5" y2="4.7" />
-        <line id="pedal" stroke-width="0.75" x1="-1" x2="1" transform="rotate(-131)" />
+        <line id="crank" stroke-width="0.5" y2="4.7"></line>
+
+        <line id="pedal" stroke-width="0.75" x1="-1" x2="1" transform="rotate(-131)">
+            <animateTransform id="pedalanimation" attributeName="transform" type="rotate"
+                fill="freeze" additive="sum" calcMode="spline" begin="indefinite" dur="indefinite"
+                values="0; 0" keyTimes="0; 1" keySplines="0.333, 0.667, 0.667, 1">
+            </animateTransform>
+        </line>
 
         <g id="spokepair" stroke-width="0.25">
-            <line x1="-5.836" y1="-2.974" x2="-0.6" y2="0.8" />
-            <line x1="-6.469" y1="-1.025" x2="-0.6" y2="0.8" />
+            <line x1="-5.836" y1="-2.974" x2="-0.6" y2="0.8"></line>
+            <line x1="-6.469" y1="-1.025" x2="-0.6" y2="0.8"></line>
         </g>
 
         <g id="spokequad">
-            <use href="#spokepair" />
-            <use href="#spokepair" transform="scale(1, -1)" />
+            <use href="#spokepair"></use>
+            <use href="#spokepair" transform="scale(1, -1)"></use>
         </g>
 
         <g id="wheel" transform="rotate(126)">
-            <use href="#pedal" transform="translate(0, 4.7)" />
-            <use href="#crank" />
+            <animateTransform id="wheelanimation" attributeName="transform" type="rotate"
+                fill="freeze" additive="sum" calcMode="spline" begin="indefinite" dur="indefinite"
+                values="0; 0" keyTimes="0; 1" keySplines="0.333, 0.667, 0.667, 1">
+            </animateTransform>
 
-            <use href="#spokequad" />
-            <use href="#spokequad" transform="rotate(72)" />
-            <use href="#spokequad" transform="rotate(144)" />
-            <use href="#spokequad" transform="rotate(216)" />
-            <use href="#spokequad" transform="rotate(288)" />
+            <use href="#pedal" transform="translate(0, 4.7)"></use>
+            <use href="#crank"></use>
 
-            <use href="#hub" />
-            <use href="#tire" />
+            <use href="#spokequad"></use>
+            <use href="#spokequad" transform="rotate(72)"></use>
+            <use href="#spokequad" transform="rotate(144)"></use>
+            <use href="#spokequad" transform="rotate(216)"></use>
+            <use href="#spokequad" transform="rotate(288)"></use>
 
-            <use href="#crank" transform="rotate(180)" />
-            <use href="#pedal" transform="translate(0, -4.7)" />
+            <use href="#hub"></use>
+            <use href="#tire"></use>
+
+            <use href="#crank" transform="rotate(180)"></use>
+            <use href="#pedal" transform="translate(0, -4.7)"></use>
         </g>
 
         <g id="post">
-            <line stroke-width="0.75" y2="-15" />
-            <circle fill="black" stroke="none" r="0.375" />
+            <line stroke-width="0.75" y2="-15"></line>
+            <circle fill="black" stroke="none" r="0.375"></circle>
         </g>
 
         <path id="saddle" fill="black" stroke="none" transform="translate(0, -14.5)"
-            d="M 0 0
-            C -4 0 -5 -0.5 -4 -2
-            S -3 -3 -1 -2
-            S 3 -2 4 -2
-            S 5 -1.5 5 -0.75
-            S 3 0 0 0"
-        />
+            d="M 0 0 C -4 0 -5 -0.5 -4 -2 S -3 -3 -1 -2 S 3 -2 4 -2 S 5 -1.5 5 -0.75 S 3 0 0 0">
+        </path>
     </defs>
 
     <g fill="none" stroke="black" transform="translate(8, 18)">
-        <use href="#wheel" />
-        <use href="#post" />
-        <use href="#saddle" />
+        <use href="#wheel"></use>
+        <use href="#post"></use>
+        <use href="#saddle"></use>
     </g>
 </svg>
