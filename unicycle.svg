@@ -4,7 +4,6 @@
         <circle id="hub" stroke-width="0.25" r="1"></circle>
 
         <line id="crank" stroke-width="0.5" y2="4.7"></line>
-
         <line id="pedal" stroke-width="0.75" x1="-1" x2="1" transform="rotate(-131)"></line>
 
         <g id="spokepair" stroke-width="0.25">
