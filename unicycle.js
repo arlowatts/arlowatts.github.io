@@ -1,9 +1,9 @@
 addEventListener("load", main);
 
 // initialize motion constants
-const impulse = 300;
-const deceleration = -200;
-const maximumVelocity = 1250;
+const impulse = 0.3;
+const deceleration = -0.0002;
+const maximumVelocity = 1.25;
 
 // declare the initial state
 let initialPosition = 0;
@@ -20,9 +20,13 @@ function main() {
     const html = document.documentElement;
     const svg = frameDocument.documentElement;
 
-    // access the animation elements in the svg tree
-    const wheelAnimation = svg.getElementById("wheelanimation");
-    const pedalAnimation = svg.getElementById("pedalanimation");
+    // access the svg elements in the graphic
+    const wheel = svg.getElementById("wheel");
+    const pedal = svg.getElementById("pedal");
+
+    // store the initial svg transformation strings
+    const wheelInitialTransform = wheel.getAttribute("transform") || "";
+    const pedalInitialTransform = pedal.getAttribute("transform") || "";
 
     // disable touch actions and text selection
     html.style["touch-action"] = "none";
@@ -36,39 +40,45 @@ function main() {
     html.addEventListener("pointerdown", accelerate);
     svg.addEventListener("pointerdown", accelerate);
 
-    // accelerate the wheel
-    function accelerate() {
+    // begin the animation loop
+    requestAnimationFrame(animate);
 
-        // get the current animation time and elapsed time
-        const currentTime = wheelAnimation.getCurrentTime()
-        const elapsedTime = Math.min(currentTime - initialTime, motionDuration);
+    function animate() {
 
-        // store the current state as the new initial state and update the velocity
-        initialPosition = position(elapsedTime) % 360;
-        initialVelocity = velocity(elapsedTime);
-        initialVelocity += impulse * (1 - initialVelocity / maximumVelocity);
+        // compute the current position of the wheel
+        const currentPosition = position(Math.min(Date.now() - initialTime, motionDuration));
 
-        initialTime = currentTime;
-        motionDuration = -initialVelocity / deceleration;
+        // apply a rotation to the wheel and the pedals
+        wheel.setAttribute("transform", wheelInitialTransform + `rotate(${+currentPosition})`);
+        pedal.setAttribute("transform", pedalInitialTransform + `rotate(${-currentPosition})`);
 
-        // update the animation elements
-        wheelAnimation.attributes.dur.value = `${motionDuration}`;
-        pedalAnimation.attributes.dur.value = `${motionDuration}`;
-
-        wheelAnimation.attributes.values.value = ` ${initialPosition};  ${position(motionDuration)}`;
-        pedalAnimation.attributes.values.value = `-${initialPosition}; -${position(motionDuration)}`;
-
-        wheelAnimation.attributes.begin.value = `${currentTime}`;
-        pedalAnimation.attributes.begin.value = `${currentTime}`;
+        // request the next frame of the animation
+        requestAnimationFrame(animate);
     }
 }
 
 // return the position of the wheel at a given time
 function position(elapsedTime) {
-    return initialPosition + (initialVelocity + deceleration * elapsedTime * 0.5) * elapsedTime;
+    return (initialPosition + (initialVelocity + deceleration * elapsedTime * 0.5) * elapsedTime) % 360;
 }
 
 // return the velocity of the wheel at a given time
 function velocity(elapsedTime) {
     return initialVelocity + deceleration * elapsedTime;
+}
+
+// accelerate the wheel
+function accelerate() {
+
+    // compute the elapsed time since the previous initial state
+    const currentTime = Date.now();
+    const elapsedTime = Math.min(currentTime - initialTime, motionDuration);
+
+    // store the current state as the new initial state and update the velocity
+    initialPosition = position(elapsedTime);
+    initialVelocity = velocity(elapsedTime);
+    initialVelocity += impulse * (1 - initialVelocity / maximumVelocity);
+
+    initialTime = currentTime;
+    motionDuration = -initialVelocity / deceleration;
 }

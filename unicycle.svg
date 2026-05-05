@@ -5,12 +5,7 @@
 
         <line id="crank" stroke-width="0.5" y2="4.7"></line>
 
-        <line id="pedal" stroke-width="0.75" x1="-1" x2="1" transform="rotate(-131)">
-            <animateTransform id="pedalanimation" attributeName="transform" type="rotate"
-                fill="freeze" additive="sum" calcMode="spline" begin="indefinite" dur="indefinite"
-                values="0; 0" keyTimes="0; 1" keySplines="0.333, 0.667, 0.667, 1">
-            </animateTransform>
-        </line>
+        <line id="pedal" stroke-width="0.75" x1="-1" x2="1" transform="rotate(-131)"></line>
 
         <g id="spokepair" stroke-width="0.25">
             <line x1="-5.836" y1="-2.974" x2="-0.6" y2="0.8"></line>
@@ -23,11 +18,6 @@
         </g>
 
         <g id="wheel" transform="rotate(126)">
-            <animateTransform id="wheelanimation" attributeName="transform" type="rotate"
-                fill="freeze" additive="sum" calcMode="spline" begin="indefinite" dur="indefinite"
-                values="0; 0" keyTimes="0; 1" keySplines="0.333, 0.667, 0.667, 1">
-            </animateTransform>
-
             <use href="#pedal" transform="translate(0, 4.7)"></use>
             <use href="#crank"></use>
 
